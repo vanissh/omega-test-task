@@ -1,0 +1,52 @@
+@import "./variables"
+
+@font-face
+  font-family: '#{$icomoon-font-family}'
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?3z1xn')
+  src: url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?3z1xn') format('truetype')
+  font-weight: normal
+  font-style: normal
+  font-display: block
+
+.icon
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important
+  position: relative
+  speak: never
+  font-style: normal
+  font-weight: normal
+  font-variant: normal
+  text-transform: none
+  line-height: 1
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &-circle
+    &:before
+      content: $icon-circle
+
+  &-add_circle_outline
+    &:before
+      content: $icon-add_circle_outline
+
+  &-control_point
+    &:before
+      content: $icon-control_point
+
+  &-delete
+    &:before
+      content: $icon-delete
+
+  &-local_grocery_store
+    &:before
+      content: $icon-local_grocery_store
+
+  &-shopping_cart
+    &:before
+      content: $icon-shopping_cart
+
+  &-playlist_add
+    &:before
+      content: $icon-playlist_add

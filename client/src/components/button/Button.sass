@@ -1,0 +1,34 @@
+@import "../../index"
+
+.button
+    width: 13rem
+    height: 3rem
+    @include borderRadius
+    border: none
+    font-size: 1rem
+    cursor: pointer
+    @include animation
+    &-transparent
+        background: transparent
+        text-align: left
+        &:hover
+            color: #6b6b6b
+            span
+                color: #6b6b6b
+    &-colored
+        background: $orange
+        width: 100%
+        color: $second
+        &:hover
+            background-color: #bd6500
+    &-delete
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 2rem
+        height: 2rem
+        border-radius: 100%
+        font-size: 1.4rem
+        top: -0.5rem
+        right: -0.5rem

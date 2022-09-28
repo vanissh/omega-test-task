@@ -1,0 +1,36 @@
+@import "../../index"
+@import "../../styles/style"
+
+.sidebar
+    width: 16rem
+    height: 35rem
+    padding: 2rem 0.5rem 1rem 2rem
+    margin: 1rem 0 0 1rem
+    background-color: $main
+    color: $text
+    font-size: 1rem
+    @include borderRadius
+    &-active
+        background-color: $second
+        padding: 1rem
+        @include borderRadius
+        @include animation
+    &-icon
+        margin-right: 1rem
+        font-size: 1.4rem
+        color: $text
+        vertical-align: middle
+    &-categories
+        width: 12rem
+        min-height: 16rem
+        margin-top: 3.5rem
+        &-list
+            list-style-type: none
+            padding: 0
+            &-item
+                margin-bottom: 1.4rem
+                @include animation
+                cursor: pointer
+        &-icon
+            font-size: 0.8rem
+            margin-right: 1rem

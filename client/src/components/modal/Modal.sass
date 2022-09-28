@@ -1,0 +1,61 @@
+@import "../../index"
+
+.modal-wrapper
+    @include modalWrapper
+    .overlay
+        @include overlay
+    &-open
+        display: flex
+.modal
+    position: relative
+    width: 30rem
+    height: 38rem
+    display: flex
+    align-items: center
+    flex-direction: column
+    background-color: $second
+    border: 1px solid $main
+    border-radius: 1rem
+    padding: 3rem
+    z-index: 2
+    .title
+    form
+        margin-top: 1rem
+        width: 100%
+        .wrapper
+            display: flex
+            justify-content: space-between
+            .row
+                &:nth-last-child(1)
+                    margin-left: 0.5rem
+
+        .row
+            position: relative
+            width: 100%
+            display: flex
+            flex-direction: column
+            padding: 1rem 0rem
+            p
+                font-size: 0.8rem
+                text-align: center
+    &-input
+        width: 100%
+        height: 3rem
+        border-radius: 1rem
+        border: 1px solid $orange
+        padding: 0.7rem
+        background-color: $second
+        &:focus
+            outline: none
+    &-label
+        position: absolute
+        display: block
+        text-align: start
+        top: 0.5rem
+        left: 2rem
+        font-size: 0.8rem
+        background-color: $second
+        padding: 0 0.2rem
+    &-textarea
+        height: 6rem
+        resize: none

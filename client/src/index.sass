@@ -1,0 +1,58 @@
+$main: #e8e8e8
+$second: #fff
+$text: #000
+$orange: #ff8800
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+@mixin borderRadius
+  border-radius: 1rem
+
+@mixin animation
+  transition: all 0.4s
+
+@mixin modalWrapper
+  position: fixed
+  display: none
+  width: 100%
+  height: 100%
+  justify-content: center
+  align-items: center
+  background: rgba(0,0,0,.7)
+  z-index: 100
+
+@mixin overlay
+  position: absolute
+  width: 100%
+  height: 100%
+  z-index: 1
+
+body
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+@keyframes fadeIn
+  from
+    opacity: 0
+    visibility: hidden
+  to
+    opacity: 1
+    visibility: visible
+
+.fade-in
+  animation-name: fadeIn
+  opacity: 1
+  visibility: visible
+  animation-duration: 0.2s
+  animation-timing-function: linear
+
+.container
+  display: flex
+  width: 100%
